@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1784548462802"
+    createdUser="paransha.vyas" id="25890fe5:19f7f603532:-7e5f"
+    selfDescribing="ls1-ap-52016888.prod.hclpnp.com (10.225.17.48)"
+    type="host_machine_resource" updatedTimestamp="1784548462802"
+    updatedUser="paransha.vyas" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="10.225.17.48" user_host_name="ls1-ap-52016888.prod.hclpnp.com">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

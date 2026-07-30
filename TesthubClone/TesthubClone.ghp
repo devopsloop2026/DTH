@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_c buildID="I20260313_1046" certificateAuthority="KEY_1024_BITS"
+    comments="Project created on 20 July 2026" creationVersion="11.0.8"
+    domain="default" extDocPrefix="" name="TesthubClone"
+    owner="paransha.vyas" rulesCacheUri="%%PROJECT/ROOT%%Rules"
+    updateResultsDbOnItemChange="false" uuid="0000019f-7f60-3415-0003-68e1964b8938">
+    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace=""/>
+    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+    <serverSettings
+        ghRepositoryURL="https://ls1-ap-52016888.prod.hclpnp.com:5443/RTCP/"
+        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!80d3" trustStorePath="">
+        <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
+            <connectionParams ZOSEnv="false"
+                dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+                dpsOption="false" dpsPass="#com.ghc.1!0608" dpsUser=""
+                driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                password="#com.ghc.1!57c80C9C6A4540F9211F7E1D128E4AC54445E316A2BB"
+                url="jdbc:sqlserver://localhost:1433;databasename=DTIAStub;trustServerCertificate=true;" user="Paransha">
+                <dpsSsl useSsl="false"/>
+                <stubSettings maxProcCallCount="10000"
+                    maxResultSetRowCount="10000" maxRowCount="10000"
+                    password="#com.ghc.1!5f6b"
+                    procedureLearningBehaviour="1" schema="" url=""
+                    useIntegratedDB="true" useSsl="false" user=""/>
+                <storedProcedureFilter catalogFilterEnabled="false"
+                    catalogFilterPattern=""
+                    procedureFilterEnabled="false"
+                    procedureFilterPattern="" schemaFilterEnabled="true"
+                    schemaFilterPattern="Paransha"
+                    storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+                <timestampFormatting timestampFormatZero="false"
+                    timestampFormattingEnabled="false" timestampPrecision="9"/>
+                <proxy useProxy="false"/>
+            </connectionParams>
+        </dbConnectionParameters>
+        <automationServer enabled="true" projectId="2450"
+            projectName="Paransha_TestHub" publishResults="true"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!41f0"
+            trustStorePath="" url="https://10.190.76.155.nip.io/test/#/Initial/space"/>
+    </serverSettings>
+    <permissionsSettings ADtrustSource="NONE"
+        ADtrustStorePassword="#com.ghc.1!8b66" ADtrustStorePath=""
+        autoLogin="true" host="AP-PNP-DC02"
+        permFactId="ldap.permissions.factory.none" port="389" pswd="1sm6DI1jGGMI1RfKPUSOBgWHHm8Js8SRImxy1HV0VZk=$lueN9pu0RQhhIksJRqnUb4SQSkH4ZKpOw7WqvHPD5lg="/>
+    <resultPublishers disableAll="false"/>
+</_c>

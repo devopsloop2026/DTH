@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1784549430219"
+    createdUser="paransha.vyas" id="38fcd5c2:19f7f6f3de3:-7ea0"
+    selfDescribing="Subnet (10.225.26)" type="sub_net_resource"
+    updatedTimestamp="1784549430219" updatedUser="paransha.vyas" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig subnet="10.225.26" user_sub_net_name="Subnet"/>
+</editableResource>

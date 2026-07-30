@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1784548458933"
+    createdUser="paransha.vyas" id="25890fe5:19f7f603532:-7ec6"
+    selfDescribing="calculator" type="wsdl_schema"
+    updatedTimestamp="1784548460616" updatedUser="paransha.vyas" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig schemaSourceTemplateName="WSDL">
+        <schemaSourceConfig sourceType="102" uri="https://ls1-ap-52016888.prod.hclpnp.com:5443/RTCP/examples/calculator/calculatorService/calculator.wsdl"/>
+    </resourceConfig>
+</editableResource>

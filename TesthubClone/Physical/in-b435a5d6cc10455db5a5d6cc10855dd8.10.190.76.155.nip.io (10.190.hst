@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1784550172247"
+    createdUser="paransha.vyas" id="-ded1c6c:19f7f756acc:-7de5"
+    selfDescribing="in-b435a5d6cc10455db5a5d6cc10855dd8.10.190.76.155.nip.io (10.190.76.155)"
+    type="host_machine_resource" updatedTimestamp="1784550172247"
+    updatedUser="paransha.vyas" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="10.190.76.155" user_host_name="in-b435a5d6cc10455db5a5d6cc10855dd8.10.190.76.155.nip.io">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

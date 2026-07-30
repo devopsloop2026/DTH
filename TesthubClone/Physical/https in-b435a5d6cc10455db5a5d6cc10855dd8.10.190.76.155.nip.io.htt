@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1784548461771"
+    createdUser="paransha.vyas"
+    id="25890fe5:19f7f603532:-7ec5:1437688209:1544155186"
+    selfDescribing="https in-b435a5d6cc10455db5a5d6cc10855dd8.10.190.76.155.nip.io"
+    type="http_transport" updatedTimestamp="1784550172101"
+    updatedUser="paransha.vyas" version="1.0">
+    <syncdetails compare="https ls1-ap-52016888.prod.hclpnp.com:5443"
+        lastSynced="1784548461771" sourceid="25890fe5:19f7f603532:-7ec5">
+        <sourcepath path="CalculatorPortBindingService/CalculatorPortBindingSoap11"/>
+    </syncdetails>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain=""
+            credPassword="#com.ghc.1!e085" credPreemptive="false"
+            credType="0" credUser=""
+            httpHost="in-b435a5d6cc10455db5a5d6cc10855dd8.10.190.76.155.nip.io"
+            httpNtlmDomain="" httpPort="443" httpProxyHost=""
+            httpProxyPassword="#com.ghc.1!11bd" httpProxyPort=""
+            httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            proxyType="http.proxy.default" recType="PROXY" useSsl="true" version="4">
+            <kerberos Anon="false" Conf="false" Custom="true"
+                Enabled="false" Integ="false" KDC="" Loc=""
+                MutAuth="false" Principal="" Pwd="#com.ghc.1!44f2"
+                Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+            <serverAuthentication>
+                <authenticationConfig enabled="false" realm="" type="1"/>
+                <authenticationConfig algorithm="" authParams=""
+                    domain="" enabled="false" nonce="false" opaque=""
+                    qop="" realm="" stale="" type="2"/>
+                <authenticationConfig enabled="false" type="3"/>
+                <authenticationConfig enabled="false" type="5"/>
+            </serverAuthentication>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>
