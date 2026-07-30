@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<_c buildID="I20231201_0211" certificateAuthority="KEY_1024_BITS"
+    comments="Project created on July 11, 2024" creationVersion="11.0.0"
+    domain="Stub_TPS_Domain" extDocPrefix="" name="Stub_TPS"
+    owner="rajesh-a" rulesCacheUri="%%PROJECT/ROOT%%Rules"
+    updateResultsDbOnItemChange="false" uuid="00000190-a022-c960-0002-752c33d6fe80">
+    <rootEnvironmentConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace=""/>
+    <dateTimeConfig date="yyyy/MM/dd" dateTime="dd-MMM-yyyy HH:mm:ss" time="HH:mm:ss.SSS"/>
+    <serverSettings
+        ghRepositoryURL="https://lp3-ap-51627966.prod.hclpnp.com:5443/RTCP"
+        trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!4f93" trustStorePath="">
+        <dbConnectionParameters maxConnections="1" poolName="DefaultPoolName">
+            <connectionParams ZOSEnv="false"
+                dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+                dpsOption="false" dpsPass="#com.ghc.1!72b5" dpsUser=""
+                driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                password="#com.ghc.1!a235E370A2EF727D1172552C0CB06A5440B221167E101291"
+                url="jdbc:sqlserver://localhost:1433;databasename=RITDB;trustServerCertificate=true" user="TestUser">
+                <dpsSsl useSsl="false"/>
+                <stubSettings maxProcCallCount="10000"
+                    maxResultSetRowCount="10000" maxRowCount="10000"
+                    password="#com.ghc.1!e404"
+                    procedureLearningBehaviour="1" schema="" url=""
+                    useIntegratedDB="true" useSsl="false" user=""/>
+                <storedProcedureFilter catalogFilterEnabled="false"
+                    catalogFilterPattern=""
+                    procedureFilterEnabled="false"
+                    procedureFilterPattern="" schemaFilterEnabled="true"
+                    schemaFilterPattern="TestUser"
+                    storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+                <timestampFormatting timestampFormatZero="false"
+                    timestampFormattingEnabled="false" timestampPrecision="9"/>
+                <proxy useProxy="false"/>
+            </connectionParams>
+        </dbConnectionParameters>
+        <automationServer enabled="true" hostname="10.14.84.60.nip.io"
+            port="443" projectId="5650" projectName="rajeshavanthi"
+            publishResults="true" trustSource="TRUST_ALL"
+            trustStorePassword="#com.ghc.1!64ff" trustStorePath=""/>
+    </serverSettings>
+    <permissionsSettings ADtrustSource="NONE"
+        ADtrustStorePassword="#com.ghc.1!a890" ADtrustStorePath=""
+        autoLogin="true" host="US-PNP-DC05"
+        permFactId="ldap.permissions.factory.none" port="389" pswd="GqAfJi7tsurxNTl3PLMPNgNozfC0nHGz26CfEYQ1RCU=$gNUdyAOucei10aO0KZFpvFrvI9AlNB5VemC8CBgBhGs="/>
+    <resultPublishers disableAll="false"/>
+    <publishedResourceInfo>
+        <info domain="AddNumberDomain"
+            serverUrl="https://lp3-ap-51627966.prod.hclpnp.com:5443/RTCP"
+            vMajor="1" vMinor="0">
+            <resource id="-53c866e0:190a022ca21:-7e47"/>
+        </info>
+        <info domain="Stub_TPS_Domain"
+            serverUrl="https://lp3-ap-51627966.prod.hclpnp.com:5443/RTCP"
+            vMajor="1" vMinor="4">
+            <resource id="1c8bb87d:190e4744bc8:-7921"/>
+        </info>
+    </publishedResourceInfo>
+</_c>

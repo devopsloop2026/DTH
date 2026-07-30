@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1721019382476"
+    createdUser="rajesh-a" id="291933d7:190af63d1a9:-7b7a"
+    type="infrastructure_component_resource"
+    updatedTimestamp="1721024858845" updatedUser="rajesh-a" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig infrastructureType="java_method_transport">
+        <recordingSettings colour="124,199,255"
+            filterPackage="com.greenhat.addnumbersclient.AddNumbersClient*&#xa;-java.*&#xa;-javax.*&#xa;-sun.*&#xa;-com.sun.*&#xa;-*.crypto.*"
+            hideIntraPackage="false" hideNoArgs="false" hideVoidReturn="false"/>
+    </resourceConfig>
+</editableResource>
