@@ -50,6 +50,33 @@ resources:
   - name: BookingFlights_1785388885863_perf!localhost.rstats
     type: com.ibm.rational.test.lt.stats.raw
   - name: BookingFlights_1785388886738.executiondlr
+  - name: BookingFlights_1785408053266.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1785408053266
+      tags: 
+      testId: A1F18BD61F610430FBDAB06362363033
+      testName: BookingFlights
+    dependencies: 
+      - path: /Blazedemo/BookingFlights.testsuite
+        type: statsSessionTest
+      - path: /Blazedemo/BookingFlights_1785408053266_orch!system.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785408053266_orch!system.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785408053266_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785408053266_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785408053557.executiondlr
+        type: statsSessionAsset
+  - name: BookingFlights_1785408053266_orch!system.mstats
+  - name: BookingFlights_1785408053266_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_1785408053266_perf!localhost.mstats
+  - name: BookingFlights_1785408053266_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_1785408053557.executiondlr
   - name: BookingFlights_Sch.testsuite
     type: com.ibm.rational.test.lt.schedule
     version: 11.0.9.0
@@ -96,6 +123,33 @@ User Group 1: Group Size 100.0 percent
   - name: BookingFlights_Sch_1785389170689_perf!localhost.rstats
     type: com.ibm.rational.test.lt.stats.raw
   - name: BookingFlights_Sch_1785389172100.executiondlr
+  - name: BookingFlights_Sch_1785406628931.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1785406628931
+      tags: 
+      testId: A1F18BD6A84D0C80FBDAB06362363033
+      testName: BookingFlights_Sch
+    dependencies: 
+      - path: /Blazedemo/BookingFlights_Sch.testsuite
+        type: statsSessionTest
+      - path: /Blazedemo/BookingFlights_Sch_1785406628931_orch!system.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785406628931_orch!system.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785406628931_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785406628931_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785406631050.executiondlr
+        type: statsSessionAsset
+  - name: BookingFlights_Sch_1785406628931_orch!system.mstats
+  - name: BookingFlights_Sch_1785406628931_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_Sch_1785406628931_perf!localhost.mstats
+  - name: BookingFlights_Sch_1785406628931_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_Sch_1785406631050.executiondlr
   - name: src
     resources: 
       - name: test
