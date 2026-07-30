@@ -1,0 +1,106 @@
+name: Blazedemo
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Blazedemo/src
+        type: javaClasspath
+  - name: BookingFlights.recdata
+  - name: BookingFlights.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Blazedemo/BookingFlights.recdata
+        type: recsessionRecdata
+  - name: BookingFlights.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.9.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F18BD61F610430FBDAB06362363033
+    dependencies: 
+      - path: /Blazedemo/BookingFlights.recsession
+        type: testRecsession
+  - name: BookingFlights_1785388885863.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1785388885863
+      tags: 
+      testId: A1F18BD61F610430FBDAB06362363033
+      testName: BookingFlights
+    dependencies: 
+      - path: /Blazedemo/BookingFlights.testsuite
+        type: statsSessionTest
+      - path: /Blazedemo/BookingFlights_1785388885863_orch!system.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785388885863_orch!system.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785388885863_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785388885863_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_1785388886738.executiondlr
+        type: statsSessionAsset
+  - name: BookingFlights_1785388885863_orch!system.mstats
+  - name: BookingFlights_1785388885863_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_1785388885863_perf!localhost.mstats
+  - name: BookingFlights_1785388885863_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_1785388886738.executiondlr
+  - name: BookingFlights_Sch.testsuite
+    type: com.ibm.rational.test.lt.schedule
+    version: 11.0.9.0
+    properties: 
+      description: 'Stages:
+
+	users=5; duration=Run Until Finished
+
+User Group 1: Group Size 100.0 percent
+
+	Test(s): BookingFlights
+
+'
+      name: BookingFlights_Sch
+      type: com.ibm.rational.test.common.schedule.Schedule
+      uid: A1F18BD6A84D0C80FBDAB06362363033
+    dependencies: 
+      - path: /Blazedemo/BookingFlights.testsuite
+        type: scheduleInvokedTest
+  - name: BookingFlights_Sch_1785389170689.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1785389170689
+      tags: 
+      testId: A1F18BD6A84D0C80FBDAB06362363033
+      testName: BookingFlights_Sch
+    dependencies: 
+      - path: /Blazedemo/BookingFlights_Sch.testsuite
+        type: statsSessionTest
+      - path: /Blazedemo/BookingFlights_Sch_1785389170689_orch!system.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785389170689_orch!system.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785389170689_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785389170689_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Blazedemo/BookingFlights_Sch_1785389172100.executiondlr
+        type: statsSessionAsset
+  - name: BookingFlights_Sch_1785389170689_orch!system.mstats
+  - name: BookingFlights_Sch_1785389170689_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_Sch_1785389170689_perf!localhost.mstats
+  - name: BookingFlights_Sch_1785389170689_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: BookingFlights_Sch_1785389172100.executiondlr
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: BookingFlights_Sch_Schedule_A1F18BD6A84D0C80FBDAB06362363033.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: BookingFlights_Test_A1F18BD61F610430FBDAB06362363033.java
+            type: com.ibm.rational.test.lt.generatedCode
