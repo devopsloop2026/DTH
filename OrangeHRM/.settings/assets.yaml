@@ -1,0 +1,99 @@
+name: OrangeHRM
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /OrangeHRM/src
+        type: javaClasspath
+  - name: addUserPT.recdata
+  - name: addUserPT.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /OrangeHRM/addUserPT.recdata
+        type: recsessionRecdata
+  - name: addUserPT.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F18456573C75B0D4B5B13133333965
+    dependencies: 
+      - path: /OrangeHRM/addUserPT.recsession
+        type: testRecsession
+  - name: addUserPT_1784564266739.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1784564266739
+      tags: 
+      testId: A1F18456573C75B0D4B5B13133333965
+      testName: addUserPT
+    dependencies: 
+      - path: /OrangeHRM/addUserPT.testsuite
+        type: statsSessionTest
+      - path: /OrangeHRM/addUserPT_1784564266739_orch!system.mstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564266739_orch!system.rstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564266739_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564266739_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564270142.executiondlr
+        type: statsSessionAsset
+  - name: addUserPT_1784564266739_orch!system.mstats
+  - name: addUserPT_1784564266739_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: addUserPT_1784564266739_perf!localhost.mstats
+  - name: addUserPT_1784564266739_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: addUserPT_1784564270142.executiondlr
+  - name: addUserPT_1784564396512.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1784564396512
+      tags: 
+      testId: A1F18456573C75B0D4B5B13133333965
+      testName: addUserPT
+    dependencies: 
+      - path: /OrangeHRM/addUserPT.testsuite
+        type: statsSessionTest
+      - path: /OrangeHRM/addUserPT_1784564396512_orch!system.mstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564396512_orch!system.rstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564396512_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564396512_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /OrangeHRM/addUserPT_1784564396992.executiondlr
+        type: statsSessionAsset
+  - name: addUserPT_1784564396512_orch!system.mstats
+  - name: addUserPT_1784564396512_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: addUserPT_1784564396512_perf!localhost.mstats
+  - name: addUserPT_1784564396512_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: addUserPT_1784564396992.executiondlr
+  - name: src
+    resources: 
+      - name: test
+        resources: 
+          - name: AddUserPT_Test_A1F18456573C75B0D4B5B13133333965.java
+            type: com.ibm.rational.test.lt.generatedCode
+  - name: ss.testsuite
+    type: com.ibm.rational.test.lt.schedule
+    version: 11.0.5.0
+    properties: 
+      description: 'Stages:
+
+	users=5; duration=Run Until Finished
+
+User Group 1: Group Size 100.0 percent
+
+'
+      name: ss
+      type: com.ibm.rational.test.common.schedule.Schedule
+      uid: A1F184EDBE6A2920D4B5B13133333965
